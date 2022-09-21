@@ -1,0 +1,16 @@
+form{
+    width: 500px;
+}
+
+.container{
+    height: 100xh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fs-3{
+    margin-right: 17%;
+    
+    
+}

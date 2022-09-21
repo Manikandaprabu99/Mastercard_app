@@ -1,0 +1,54 @@
+<br>
+<br>
+
+<div class="container">
+<form class="p-3 rounded-3"  [formGroup]="registerForm"  (ngSubmit)="registerSubmited()">
+    <div class="row g-0">
+        <div class="col text-center p-2 mb-3 bg-light">
+            <h2 class="fs-3">Welcome Back</h2>
+        </div>
+    </div>
+  
+        <div class="row">
+            <div class="col mb-3">
+                <label for="CreditCardNumber" class="form-label">CreditCardNumber<sup style="color:rgb(247, 8, 8);">*</sup></label>
+                <input type="number" class="form-control" id="CreditCardNumber" formControlName="CreditCardNumber" style="width: 400px;">
+  
+                <div class="form-text text-danger" *ngIf="useremail.errors?.['required'] && (useremail.touched || useremail.dirty)">CreditCardNumber is Required.</div>
+  
+                
+            
+            </div>
+  
+        </div>
+        <div class="row">
+          <div class="col mb-3">
+              <label for="MobileNumber" class="form-label">MobileNumber<sup style="color:rgb(247, 8, 8);">*</sup></label>
+              <input type="number" class="form-control" id="MobileNumber" formControlName="MobileNumber" style="width: 400px;">
+              
+              <div class="form-text text-danger" *ngIf="password.errors?.['required'] && (password.dirty || password.touched)">MobileNumber is Required.</div>
+  
+              
+             
+         
+         
+         
+          </div>
+         
+      </div>
+            
+        <div class="row">
+          <div class="col-4 offset-0">
+              <div class="d-grid">
+                  <button type="submit" class="btn btn-primary" style="width: 100px;">Submit</button>
+              </div>
+          </div>
+      </div>
+      <br>
+      
+      <button  class="btn btn-danger" style="width: 70px;" routerLink="">Back</button>
+  </form><br>
+
+  
+
+</div>
